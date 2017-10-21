@@ -48,7 +48,6 @@ def NOTIFIED_ADD_CONTACT(op):
 tracer.addOpInterrupt(5,NOTIFIED_ADD_CONTACT)
 
 def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
-    #print op
     try:
         sendMessage(op.param1, client.getContact(op.param2).displayName + "\n" + "\n" + "Salam kenal kakak, nama saya yuki (≧∇≦)/ " + "\n" + "\n" + " Selamat datang di " + "\n" + "\n" + " °˖✧◝(⁰▿⁰)◜✧˖° " + group.name + " °˖✧◝(⁰▿⁰)◜✧˖° " + "\n" + "\n" + " Jangan lupa check note yaa kak" + "\n" + "Have fun and keep solid yaa sesama anggota lainnya Ｏ(≧∇≦)Ｏ")
     except Exception as e:
